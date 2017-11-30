@@ -21,14 +21,13 @@ export default {
         {isInput: false},
         {isInput: false},
       ],
-      realPwd: ''
+      realPwd: '',
+      inputDom: document.getElementsByClassName('pwd_input')[0]
     }
   },
   watch: {
     realPwd (realPwd) {
-      // realPwd = realPwd.substr(0,6);
-      // console.log(realPwd.length)
-      this.realPwd.length == 6 && (document.getElementsByClassName('pwd_input')[0].blur())
+      this.realPwd.length == 6 && this.inputDom.blur()
       for (let i = 0; i < 6; i++) {
       	this.pwds[i].isInput = false;
       }
@@ -39,7 +38,7 @@ export default {
   },
   methods: {
     blurInput () {
-      document.getElementsByClassName('pwd_input')[0].focus()
+      this.inputDom.focus()
     }
   }
 }
