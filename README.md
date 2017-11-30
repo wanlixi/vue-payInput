@@ -2,7 +2,8 @@
 ### 2017-11-30 Create by wanlixin
 
 基于vue2.0开的一个类似微信支付密码输入的组件
-
+### 效果如下：
+![](https://github.com/wanlixi/vue-payInput/blob/master/imitation-pay-input.gif)
 #### 功能描述
 <ol>
   <li>仅支持输入数字且仅6位</li>
